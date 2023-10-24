@@ -54,9 +54,25 @@ yarn install
 
 ## Colaboradores 🤝🤝
 
-| Foto                                                       | Nome                                                 |
-| ---------------------------------------------------------- | ---------------------------------------------------- |
-| <img src="https://github.com/aleretamero.png" width="100"> | [Alexandre Retamero](https://github.com/aleretamero) |
+<table>
+  
+  <td>
+
+  | Foto | Nome | 
+  | -------------- | ------------- | 
+  | <img src="https://github.com/aleretamero.png" width="100"> | [Alexandre Retamero](https://github.com/aleretamero) |  
+
+  </td>
+
+  <td>
+
+  | Foto | Nome | 
+  | -------------- | ------------- | 
+  | <img src="https://github.com/levieber.png" width="100"> | [Levi Eber](https://github.com/levieber) |  
+
+  </td>
+
+</table>
 
 ## Licença
 
