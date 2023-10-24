@@ -1,10 +1,9 @@
 import express from 'express';
+import { resolve } from 'path';
 
 const app = express();
 
-app.get('/', (_req, res) => {
-  res.status(200).send('Hello world!');
-});
+app.use(express.static(resolve(__dirname, '..', 'public')));
 
 app.listen(3333, () => {
   console.log('Server running on PORT 3333 🔥');
