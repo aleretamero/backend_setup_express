@@ -149,6 +149,12 @@ it('should sum', () => {
 
 3. Criar arquivo .gitignore
 
+```bash
+ni .gitignore # powershell
+# ou
+touch .gitignore # bash, zsh
+```
+
 ```gitignore
 node_modules
 coverage
