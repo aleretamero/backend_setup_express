@@ -300,6 +300,8 @@ touch tsconfig.eslint.json # bash, zsh
 7. Configurar jest.config.ts
 
 ```ts
+import type { Config } from 'jest';
+
 const config: Config = {
   clearMocks: true,
   collectCoverage: true,
@@ -313,6 +315,8 @@ const config: Config = {
     '.+\\.ts$': ['ts-jest', { isolatedModules: true }],
   },
 };
+
+export default config;
 ```
 
 8. Configurar .eslintrc.json
@@ -365,7 +369,8 @@ touch .prettierrc.json # bash, zsh
   "arrowParens": "always",
   "trailingComma": "all",
   "printWidth": 80,
-  "useTabs": false
+  "useTabs": false,
+  "endOfLine": "lf"
 }
 ```
 
@@ -378,8 +383,10 @@ touch .prettierrc.json # bash, zsh
     "build": "tsc",
     "start:dev": "nodemon --exec ts-node ./src/index.ts",
     "prepare": "husky install",
+    "lint": "eslint src/**/*.ts --fix",
+    "format": "prettier --write  src/**/*.ts",
     "test": "jest --passWithNoTests",
-    "test:watch": "npm test -- --watch",
+    "test:watch": "npm test -- --watch --onlyChanged",
     "test:staged": "npm test -- --findRelatedTests",
     "test:push": "npm test -- --coverage"
   }
