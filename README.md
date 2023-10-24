@@ -228,6 +228,18 @@ build
 .env
 ```
 
+4. Criar arquivo .gitattributes
+
+```bash
+ni .gitattributes # powershell
+# ou
+touch .gitattributes # bash, zsh
+```
+
+```gitattributes
+* text=auto eol=lf
+```
+
 4. Criar arquivo .lintstagedrc.json
 
 ```bash
