@@ -1,6 +1,5 @@
-node_modules
-coverage
-dist
-build
+node_modules/
+coverage/
+dist/
 
 .env
